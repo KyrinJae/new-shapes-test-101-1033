@@ -18,8 +18,8 @@ namespace MohawkGame2D
         public void Setup()
         {Window.SetTitle("Mohawk Game 2D");
             Window.SetSize(600, 600);
-            
-            Draw.FillColor= Color.Red;
+
+            Draw.FillColor = Color.Red;
            
             Draw.Circle(new Vector2(300, 300), 250);
 
@@ -41,8 +41,21 @@ namespace MohawkGame2D
             /// put triange on the bottom of the other triangle to make it a star, and make sure the second triangle is also white in color and centered in the circle.
             Draw.Triangle(new Vector2(300, 350), new Vector2(275, 275), new Vector2(325, 275));
             /// put triange to the right of the other triangle to make it a star, and make sure the second triangle is also white in color and centered in the circle.
+            /// when space bar is pressed change color 
+            /// 
+            /// 
+            /// 
+            /// /// 
             
-            {
+               if(Input.IsKeyboardKeyDown(KeyboardKey.Space))
+            {/// when the space bar is pressed change to this color
+                Window.ClearBackground(Color.Gray);
+              Draw.FillColor = Color.Black;
+                Draw.Circle(new Vector2(300, 300), 250);
+                Draw.FillColor = Color.Red;
+                Draw.Circle(new Vector2(300, 300), 200);
+                Draw.FillColor = Color.White;
+                Draw.Circle(new Vector2(300, 300), 150);
 
 
 
@@ -69,9 +82,14 @@ namespace MohawkGame2D
                     }
             
             {
-                    ///change color of outer color when input key is pressed
-                    Draw.FillColor = Color.OffWhite;
-                    Input.IsKeyboardKeyPressed(KeyboardKey.Space);
+                     
+                   
+                    
+                    ;
+
+
+
+
 
 
 
