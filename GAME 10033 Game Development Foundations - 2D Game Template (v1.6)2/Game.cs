@@ -2,6 +2,7 @@
 using System;
 using System.Numerics;
 using MohawkGame2D;
+using Raylib_cs;
 
 // The namespace your code is in.
 namespace MohawkGame2D
@@ -37,25 +38,59 @@ namespace MohawkGame2D
             /// Draw a star in the middle of the circle, have it stay within the bounds of the circle, and have it be white in color.make sure the star is centered in the circle and has five points.
             Draw.FillColor=Color.OffWhite;
             Draw.Triangle(new Vector2(300, 250), new Vector2(275, 325), new Vector2(325, 325));
-
-            if (Input.IsKeyboardKeyDown(KeyboardKey.Space))
-            {
-                Draw.FillColor = Color.Green;
-                Draw.Circle(new Vector2(300, 300), 50);
-            }
-
-            /// change circle color to gray when the spacebar is clicked and have it stay blue until the mouse is clicked again, then change it back to red.
-            if (Input.IsMouseButtonDown(MouseButton.Left))
-            {
-                Window.ClearBackground(Color.White);
-
-                Draw.Circle(Input.GetMouseX(), Input.GetMouseY(), 50);
-
-
-
-
-            }
+            /// put triange on the bottom of the other triangle to make it a star, and make sure the second triangle is also white in color and centered in the circle.
+            Draw.Triangle(new Vector2(300, 350), new Vector2(275, 275), new Vector2(325, 275));
+            /// put triange to the right of the other triangle to make it a star, and make sure the second triangle is also white in color and centered in the circle.
             
+            {
+
+
+
+            }
+
+
+            {
+
+                {
+                        
+                        
+        }
+                
+                        
+                    
+                    {
+                        
+                        
+                    }
+                    
+                    {
+                        
+                        
+                    }
+            
+            {
+                    ///change color of outer color when input key is pressed
+                    Draw.FillColor = Color.OffWhite;
+                    Input.IsKeyboardKeyPressed(KeyboardKey.Space);
+
+
+
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+            }
+
         }
 
         /// <summary>
@@ -67,4 +102,4 @@ namespace MohawkGame2D
         }
     }
 
-}
+} 
