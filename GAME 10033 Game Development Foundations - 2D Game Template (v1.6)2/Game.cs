@@ -19,50 +19,91 @@ namespace MohawkGame2D
         {Window.SetTitle("Mohawk Game 2D");
             Window.SetSize(600, 600);
 
-            Draw.FillColor = Color.Red;
-           
-            Draw.Circle(new Vector2(300, 300), 250);
-
-            Draw.FillColor = Color.OffWhite;
-            Draw.Circle(new Vector2(300, 300), 200);
-
-
-            Draw.FillColor = Color.Red;
-
-            Draw.Circle(new Vector2(300, 300), 150);
-
-
-            Draw.FillColor = Color.Blue;
-
-            Draw.Circle(new Vector2(300, 300), 100);
-            /// Draw a star in the middle of the circle, have it stay within the bounds of the circle, and have it be white in color.make sure the star is centered in the circle and has five points.
-            Draw.FillColor=Color.OffWhite;
-            Draw.Triangle(new Vector2(300, 250), new Vector2(275, 325), new Vector2(325, 325));
-            /// put triange on the bottom of the other triangle to make it a star, and make sure the second triangle is also white in color and centered in the circle.
-            Draw.Triangle(new Vector2(300, 350), new Vector2(275, 275), new Vector2(325, 275));
-            /// put triange to the right of the other triangle to make it a star, and make sure the second triangle is also white in color and centered in the circle.
-            /// when space bar is pressed change color 
-            /// 
-            /// 
-            /// 
-            /// /// 
             
-               if(Input.IsKeyboardKeyDown(KeyboardKey.Space))
-            {/// when the space bar is pressed change to this color
-                Window.ClearBackground(Color.Gray);
-              Draw.FillColor = Color.Black;
-                Draw.Circle(new Vector2(300, 300), 250);
-                Draw.FillColor = Color.Red;
-                Draw.Circle(new Vector2(300, 300), 200);
-                Draw.FillColor = Color.White;
-                Draw.Circle(new Vector2(300, 300), 150);
+           
+            
+
+            
+            
 
 
+            
 
-            }
+            
 
 
+            
+
+            
+            
+            
+           
+            
+            
+            
+            
+            
+            
+            
+            
+            
+               
             {
+
+                // Toggle between Normal and Battle-Damaged/Scratched states using the Space Bar
+
+
+                {
+                    // State 1: Battle-Damaged / Scratched U.S. Agent Shield
+
+                    // Outer black rim
+                    Draw.FillColor = Color.Black;
+                    Draw.Circle(new Vector2(200, 200), 120);
+
+                    // Outer red ring with damage/scratches
+                    Draw.FillColor = Color.Red;
+                    Draw.Circle(new Vector2(200, 200), 110);
+
+                    // White ring
+                    Draw.FillColor = Color.White;
+                    Draw.Circle(new Vector2(200, 200), 85);
+
+                    // Inner black ring (distinctive to U.S. Agent's shield)
+                    Draw.FillColor = Color.Black;
+                    Draw.Circle(new Vector2(200, 200), 60);
+
+                    // Center blue disc
+                    Draw.FillColor = Color.Blue;
+                    Draw.Circle(new Vector2(200, 200), 45);
+
+                    // White Star
+                    Draw.FillColor = Color.White;
+                    Draw.Triangle(new Vector2(200, 168), new Vector2(193, 190), new Vector2(207, 190));
+                    Draw.Triangle(new Vector2(225, 191), new Vector2(207, 190), new Vector2(213, 209));
+                    Draw.Triangle(new Vector2(214, 230), new Vector2(213, 209), new Vector2(200, 216));
+                    Draw.Triangle(new Vector2(186, 230), new Vector2(200, 216), new Vector2(187, 209));
+                    Draw.Triangle(new Vector2(175, 191), new Vector2(187, 209), new Vector2(193, 190));
+                    Draw.Triangle(new Vector2(200, 200), new Vector2(207, 190), new Vector2(213, 209));
+                    Draw.Triangle(new Vector2(200, 200), new Vector2(213, 209), new Vector2(200, 216));
+                    Draw.Triangle(new Vector2(200, 200), new Vector2(200, 216), new Vector2(187, 209));
+                    Draw.Triangle(new Vector2(200, 200), new Vector2(187, 209), new Vector2(193, 190));
+                    Draw.Triangle(new Vector2(200, 200), new Vector2(193, 190), new Vector2(207, 190));
+
+                    // Deep battle scratch marks (dark gouges across the shield)
+
+
+
+
+
+
+
+                }
+
+
+                }
+
+
+                {
 
                 {
                         
@@ -116,8 +157,18 @@ namespace MohawkGame2D
         /// </summary>
         public void Update()
         {
-           
-        }
-    }
+            
+            
 
-} 
+
+
+
+
+
+    }
+}
+
+
+}
+
+
