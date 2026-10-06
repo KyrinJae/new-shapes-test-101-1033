@@ -55,55 +55,6 @@ namespace MohawkGame2D
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             Draw.FillColor = Color.Black;
             if (Input.IsKeyboardKeyDown(KeyboardKey.Enter)) Draw.Circle(new Vector2(200, 200), 170);
             Draw.FillColor = Color.Red;
@@ -112,6 +63,60 @@ namespace MohawkGame2D
             if (Input.IsKeyboardKeyDown(KeyboardKey.Enter)) Draw.Circle(new Vector2(200, 200), 115);
             Draw.FillColor = Color.Black;
             if (Input.IsKeyboardKeyDown(KeyboardKey.Enter)) Draw.Circle(new Vector2(200, 200), 90);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
